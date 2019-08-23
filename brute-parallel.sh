@@ -10,9 +10,9 @@ wpa3brutesup="/root/wpa3_brute/wpa_supplicant/wpa_supplicant/wpa_supplicant"
   sed "s/PASSPASS/{}/" $supconf > /tmp/{}
   $wpa3brutesup -i wlan1 -c /tmp/{} > /dev/null
   if [ $? -eq 127 ]; then
-        echo $x:FAIL
+        echo {}:FAIL
   else
-        echo $x:SUCCESS
+        echo {}:SUCCESS
         exit 0
   fi
   rm /tmp/{}
