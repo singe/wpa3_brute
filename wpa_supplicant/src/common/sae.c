@@ -148,8 +148,8 @@ static struct crypto_bignum * sae_get_rand(struct sae_data *sae)
 		}
 		break;
 	}
-*/
 	os_memset(val, 0, order_len);
+*/
 	return bn;
 }
 
